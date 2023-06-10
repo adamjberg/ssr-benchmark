@@ -1,12 +1,5 @@
-function Inner() {
-  return <div>inner</div>
-}
-
 function Item({ text }: { text: string }) {
-  return <div>
-    <span>{text}</span>
-    <Inner/>
-</div>
+  return <div>{text}</div>;
 }
 
 export default function Home() {
@@ -18,5 +11,5 @@ export default function Home() {
         <Item key={index} text={String(index)}></Item>
       ))}
     </main>
-  )
+  );
 }
